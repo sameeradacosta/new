@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Costa Fabrica - Rentals</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+   <nav>
+    <div class="nav-container">
+        <a href="index.html" class="logo">Costa Fabrica</a>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li class="has-dropdown">
+                <a href="rentals.html">Rentals</a>
+                <ul class="dropdown">
+                    <li><a href="rentals.html#chairs">Chairs</a></li>
+                    <li><a href="rentals.html#tables">Tables</a></li>
+                    <li><a href="rentals.html#speakers">Speakers</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="services.html">Services</a>
+                <ul class="dropdown">
+                    <li><a href="services.html#catering">Catering</a></li>
+                    <li><a href="services.html#venue">Venue</a></li>
+                    <li><a href="services.html#decorations">Decorations</a></li>
+                    <li><a href="services.html#photographers">Photographers</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="packages.html">Packages</a>
+                <ul class="dropdown">
+                    <li><a href="packages.html#weddings">Weddings</a></li>
+                    <li><a href="packages.html#birthdays">Birthdays</a></li>
+                    <li><a href="packages.html#corporate">Corporate Events</a></li>
+                </ul>
+            </li>
+            <li><a href="order.html">Order Now</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+    <!-- HERO -->
+    <header class="hero">
+        <h1 class="hero-title">Our Rentals</h1>
+        <p class="hero-desc">Premium furniture and sound solutions to elevate every event</p>
+    </header>
+
+    <!-- CHAIRS -->
+    <section id="chairs" class="rental-category">
+        <h2>Chairs</h2>
+        <p>Comfortable and stylish chairs that suit every theme and venue.</p>
+        <div class="rental-container">
+            <div class="rental-box">
+                <img src="plastic.webp" alt="Plastic Chair">
+                <h3>Plastic Chair</h3>
+                <p>Lightweight and durable, ideal for casual gatherings or outdoor events.</p>
+                <p><b>₹5/day</b></p>
+                <a href="order.html?item=plastic_chair" class="book-btn">Book Now</a>
+            </div>
+            <div class="rental-box">
+                <img src="wooden.webp" alt="Wooden Chair">
+                <h3>Wooden Chair</h3>
+                <p>Classic elegance, perfect for formal events and wedding setups.</p>
+                <p><b>₹15/day</b></p>
+                <a href="order.html?item=wooden_chair" class="book-btn">Book Now</a>
+            </div>
+            <div class="rental-box">
+                <img src="loungue.webp" alt="Lounge Chair">
+                <h3>Lounge Chair</h3>
+                <p>Comfortable and stylish seating for relaxation areas and lounges.</p>
+                <p><b>₹25/day</b></p>
+                <a href="order.html?item=lounge_chair" class="book-btn">Book Now</a>
+            </div>
+            <div class="rental-box">
+                <img src="banquet.webp" alt="Banquet Chair">
+                <h3>Banquet Chair</h3>
+                <p>Versatile and elegant, ideal for weddings and conferences.</p>
+                <p><b>₹20/day</b></p>
+                <a href="order.html?item=banquet_chair" class="book-btn">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TABLES -->
+    <section id="tables" class="rental-category">
+        <h2>Tables</h2>
+        <p>Tables to suit all styles, from formal dining to casual gatherings.</p>
+        <div class="rental-container">
+            <div class="rental-box">
+                <img src="round.webp" alt="Round Table">
+                <h3>Round Table</h3>
+                <p>Encourages conversation and elegance for weddings or banquets.</p>
+                <p><b>₹40/day</b></p>
+                <a href="order.html?item=round_table" class="book-btn">Book Now</a>
+            </div>
+            <div class="rental-box">
+                <img src="rect.webp" alt="Rectangle Table">
+                <h3>Rectangle Table</h3>
+                <p>Perfect for dining, buffets, or conference setups.</p>
+                <p><b>₹35/day</b></p>
+                <a href="order.html?item=rectangle_table" class="book-btn">Book Now</a>
+            </div>
+            <div class="rental-box">
+                <img src="cock.webp" alt="Cocktail Table">
+                <h3>Cocktail Table</h3>
+                <p>Stylish and compact, ideal for networking or casual mingling.</p>
+                <p><b>₹25/day</b></p>
+                <a href="order.html?item=cocktail_table" class="book-btn">Book Now</a>
+            </div>
+            <div class="rental-box">
+                <img src="coffee.webp" alt="Coffee Table">
+                <h3>Coffee Table</h3>
+                <p>Cozy tables for lounges, waiting areas, or intimate settings.</p>
+                <p><b>₹20/day</b></p>
+                <a href="order.html?item=coffee_table" class="book-btn">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPEAKERS -->
+    <section id="speakers" class="rental-category">
+        <h2>Speakers</h2>
+        <p>Crystal-clear sound for all types of events, indoor or outdoor.</p>
+        <div class="rental-container">
+            <div class="rental-box">
+                <img src="pa_speaker.webp" alt="PA Speaker">
+                <h3>PA <br> Speaker</h3>
+                <p>Powerful audio for weddings, parties, and public events.</p>
+                <p><b>₹500/day</b></p>
+                <a href="order.html?item=pa_speaker" class="book-btn">Book Now</a>
+            </div>
+            <div class="rental-box">
+                <img src="dj_speaker.webp" alt="DJ Speaker">
+                <h3>DJ <br>Speaker</h3>
+                <p>High-energy sound for parties and entertainment events.</p>
+                <p><b>₹700/day</b></p>
+                <a href="order.html?item=dj_speaker" class="book-btn">Book Now</a>
+            </div>
+            <div class="rental-box">
+                <img src="portable_speaker.webp" alt="Portable Speaker">
+                <h3>Portable Speaker</h3>
+                <p>Compact and easy to use for small gatherings or casual events.</p>
+                <p><b>₹300/day</b></p>
+                <a href="order.html?item=portable_speaker" class="book-btn">Book Now</a>
+            </div>
+            <div class="rental-box">
+                <img src="column_speaker.webp" alt="Column Speaker">
+                <h3>Column Speaker</h3>
+                <p>Sleek design, ideal for speeches, conferences, and presentations.</p>
+                <p><b>₹600/day</b></p>
+                <a href="order.html?item=column_speaker" class="book-btn">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Contact: +91 9921411668 | Email: costafabrica@gmail.com</p>
+        <p>© 2025 Costa Fabrica. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

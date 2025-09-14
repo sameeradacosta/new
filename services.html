@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Costa Fabrica - Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+   <nav>
+    <div class="nav-container">
+        <a href="index.html" class="logo">Costa Fabrica</a>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li class="has-dropdown">
+                <a href="rentals.html">Rentals</a>
+                <ul class="dropdown">
+                    <li><a href="rentals.html#chairs">Chairs</a></li>
+                    <li><a href="rentals.html#tables">Tables</a></li>
+                    <li><a href="rentals.html#speakers">Speakers</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="services.html">Services</a>
+                <ul class="dropdown">
+                    <li><a href="services.html#catering">Catering</a></li>
+                    <li><a href="services.html#venue">Venue</a></li>
+                    <li><a href="services.html#decorations">Decorations</a></li>
+                    <li><a href="services.html#photographers">Photographers</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="packages.html">Packages</a>
+                <ul class="dropdown">
+                    <li><a href="packages.html#weddings">Weddings</a></li>
+                    <li><a href="packages.html#birthdays">Birthdays</a></li>
+                    <li><a href="packages.html#corporate">Corporate Events</a></li>
+                </ul>
+            </li>
+            <li><a href="order.html">Order Now</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+    <!-- HERO -->
+    <header class="hero">
+        <h1 class="hero-title">Our Services</h1>
+        <p class="hero-desc">Exquisite solutions for every celebration</p>
+    </header>
+
+    <!-- CATERING -->
+    <section id="catering">
+        <h2>Catering Services</h2>
+        <p>Delicious menus for weddings, parties, and corporate events:</p>
+        <div class="service-container">
+            <div class="service-box">
+                <img src="wedding_catering.webp" alt="Wedding Catering">
+                <h3>Wedding Catering</h3>
+                <p>Customized multi-course menus for your special day.</p>
+                <b>Price: ₹1500/person</b><br>
+                <a href="order.html?service=catering" class="book-btn">Book Now</a>
+            </div>
+            <div class="service-box">
+                <img src="party_catering.webp" alt="Party Catering">
+                <h3>Party Catering</h3>
+                <p>Snacks, beverages, and finger foods for fun celebrations.</p>
+                <b>Price: ₹800/person</b><br>
+                <a href="order.html?service=catering" class="book-btn">Book Now</a>
+            </div>
+            <div class="service-box">
+                <img src="corporate_catering.webp" alt="Corporate Catering">
+                <h3>Corporate Catering</h3>
+                <p>Professional meals for conferences and business events.</p>
+                <b>Price: ₹1200/person</b><br>
+                <a href="order.html?service=catering" class="book-btn">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- VENUE -->
+    <section id="venue">
+        <h2>Venue Services</h2>
+        <p>Beautiful locations to host your events:</p>
+        <div class="service-container">
+            <div class="service-box">
+                <img src="beach_venue.webp" alt="Beach Venue">
+                <h3>Beach Venue</h3>
+                <p>Romantic seaside location perfect for weddings and parties.</p>
+                <b>Price: ₹50,000/day</b><br>
+                <a href="order.html?service=venue" class="book-btn">Book Now</a>
+            </div>
+            <div class="service-box">
+                <img src="garden_venue.webp" alt="Garden Venue">
+                <h3>Garden Venue</h3>
+                <p>Lush green spaces perfect for daytime celebrations.</p>
+                <b>Price: ₹40,000/day</b><br>
+                <a href="order.html?service=venue" class="book-btn">Book Now</a>
+            </div>
+            <div class="service-box">
+                <img src="banquet_hall.webp" alt="Banquet Hall">
+                <h3>Banquet Hall</h3>
+                <p>Spacious halls for weddings, conferences, and events.</p>
+                <b>Price: ₹60,000/day</b><br>
+                <a href="order.html?service=venue" class="book-btn">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- DECORATIONS -->
+    <section id="decorations">
+        <h2>Decoration Services</h2>
+        <p>Elegant and thematic decor for any venue:</p>
+        <div class="service-container">
+            <div class="service-box">
+                <img src="wedding_decor.webp" alt="Wedding Decor">
+                <h3>Wedding Decor</h3>
+                <p>Floral arrangements and beautiful setups for weddings.</p>
+                <b>Price: ₹80,000/event</b><br>
+                <a href="order.html?service=decorations" class="book-btn">Book Now</a>
+            </div>
+            <div class="service-box">
+                <img src="party_decor.webp" alt="Party Decor">
+                <h3>Party Decor</h3>
+                <p>Creative setups for birthday parties and celebrations.</p>
+                <b>Price: ₹50,000/event</b><br>
+                <a href="order.html?service=decorations" class="book-btn">Book Now</a>
+            </div>
+            <div class="service-box">
+                <img src="corporate_decor.webp" alt="Corporate Decor">
+                <h3>Corporate Decor</h3>
+                <p>Professional decor for conferences and office events.</p>
+                <b>Price: ₹60,000/event</b><br>
+                <a href="order.html?service=decorations" class="book-btn">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHOTOGRAPHY -->
+    <section id="photography">
+        <h2>Photography Services</h2>
+        <p>Capture every special moment with our photographers.</p>
+        <div class="service-container">
+            <div class="service-box">
+                <img src="wedding_photography.webp" alt="Wedding Photography">
+                <h3>Wedding<br> Photography</h3>
+                <p>Professional photographers capturing magical moments.</p>
+                <b>Price: ₹25,000/day</b><br>
+                <a href="order.html?service=photography" class="book-btn">Book Now</a>
+            </div>
+            <div class="service-box">
+                <img src="party_photography.webp" alt="Party Photography">
+                <h3>Party <br>  Photography</h3>
+                <p>Fun and candid photos for unforgettable parties.</p>
+                <b>Price: ₹15,000/event</b><br>
+                <a href="order.html?service=photography" class="book-btn">Book Now</a>
+            </div>
+            <div class="service-box">
+                <img src="corporate_photography.webp" alt="Corporate Photography">
+                <h3>Corporate <br> Photography</h3>
+                <p>Professional shoots for conferences and business events.</p>
+                <b>Price: ₹20,000/event</b><br>
+                <a href="order.html?service=photography" class="book-btn">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Contact: +91 9921411668 | Email: costafabrica@gmail.com</p>
+        <p>© 2025 Costa Fabrica. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Costa Fabrica - Order Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background: url("final.webp") no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 40px;
+      background: rgba(0,0,0,0.6);
+    }
+
+    header h1 {
+      font-family: "Great Vibes", cursive;
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 20px;
+    }
+
+    form {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(0,0,0,0.8);
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+    }
+
+    form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .submit-btn {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      background: #fff;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .submit-btn:hover {
+      background: #505050;
+      color: #fff;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+ <nav>
+    <div class="nav-container">
+        <a href="index.html" class="logo">Costa Fabrica</a>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li class="has-dropdown">
+                <a href="rentals.html">Rentals</a>
+                <ul class="dropdown">
+                    <li><a href="rentals.html#chairs">Chairs</a></li>
+                    <li><a href="rentals.html#tables">Tables</a></li>
+                    <li><a href="rentals.html#speakers">Speakers</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="services.html">Services</a>
+                <ul class="dropdown">
+                    <li><a href="services.html#catering">Catering</a></li>
+                    <li><a href="services.html#venue">Venue</a></li>
+                    <li><a href="services.html#decorations">Decorations</a></li>
+                    <li><a href="services.html#photographers">Photographers</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="packages.html">Packages</a>
+                <ul class="dropdown">
+                    <li><a href="packages.html#weddings">Weddings</a></li>
+                    <li><a href="packages.html#birthdays">Birthdays</a></li>
+                    <li><a href="packages.html#corporate">Corporate Events</a></li>
+                </ul>
+            </li>
+            <li><a href="order.html">Order Now</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+  <!-- HEADER -->
+  <header>
+    <h1>Book Your Event</h1>
+    <p>Fill in the details below to confirm your booking with Costa Fabrica.</p>
+  </header>
+
+  <!-- ORDER FORM -->
+  <form id="booking-form" action="https://formspree.io/f/mldwdrnq" method="POST">
+    
+    <!-- CATEGORY -->
+    <fieldset>
+      <legend>Order Category</legend>
+      <label for="category">Choose Category:</label>
+      <select id="category" name="category">
+        <option value="">-- Select Category --</option>
+        <option value="rentals">Rentals</option>
+        <option value="services">Services</option>
+        <option value="packages">Packages</option>
+      </select>
+    </fieldset>
+
+    <!-- RENTALS -->
+    <fieldset id="rentals-options" class="hidden">
+      <legend>Rentals</legend>
+      <label for="rental-type">Select Rental Item:</label>
+      <select id="rental-type" name="rental-type">
+        <option value="">-- Select Rental --</option>
+        <option value="chairs">Chairs</option>
+        <option value="tables">Tables</option>
+        <option value="speakers">Speakers</option>
+      </select>
+      <label for="rental-quantity">Quantity:</label>
+      <input type="text" id="rental-quantity" name="rental-quantity">
+    </fieldset>
+
+    <!-- SERVICES -->
+    <fieldset id="services-options" class="hidden">
+      <legend>Services</legend>
+      <label for="service-type">Select Service:</label>
+      <select id="service-type" name="service-type">
+        <option value="">-- Select Service --</option>
+        <option value="catering">Catering</option>
+        <option value="decorations">Decorations</option>
+        <option value="venue">Venue</option>
+        <option value="photography">Photography</option>
+      </select>
+    </fieldset>
+
+    <!-- PACKAGES -->
+    <fieldset id="packages-options" class="hidden">
+      <legend>Packages</legend>
+      <label for="package-type">Select Package:</label>
+      <select id="package-type" name="package-type">
+        <option value="">-- Select Package --</option>
+        <option value="wedding">Wedding</option>
+        <option value="birthday">Birthday</option>
+        <option value="corporate">Corporate Event</option>
+      </select>
+    </fieldset>
+
+    <!-- EVENT DETAILS -->
+    <fieldset>
+      <legend>Event Details</legend>
+      <label for="event-date">Event Date:</label>
+      <input type="text" id="event-date" name="event-date" placeholder="dd-mm-yyyy">
+
+      <label for="event-time">Event Time:</label>
+      <input type="text" id="event-time" name="event-time" placeholder="HH:MM">
+
+      <label for="event-location">Event Location:</label>
+      <input type="text" id="event-location" name="event-location">
+
+      <label for="guests">Number of Guests:</label>
+      <input type="text" id="guests" name="guests">
+    </fieldset>
+
+    <!-- CUSTOMER DETAILS -->
+    <fieldset>
+      <legend>Your Details</legend>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone">
+    </fieldset>
+
+    <!-- SPECIAL INSTRUCTIONS -->
+    <fieldset>
+      <legend>Special Instructions</legend>
+      <label for="notes">Notes:</label>
+      <textarea id="notes" name="notes"></textarea>
+    </fieldset>
+
+    <!-- Redirect after submit -->
+    <input type="hidden" name="_redirect" value="https://yourwebsite.com/thank-you.html">
+
+    <!-- Spam protection -->
+    <input type="text" name="_gotcha" style="display:none">
+
+    <button type="submit" class="submit-btn">Book Now</button>
+  </form>
+
+  <script>
+    // Show/Hide category-specific fields
+    var categorySelect = document.getElementById("category");
+    var rentalsOptions = document.getElementById("rentals-options");
+    var servicesOptions = document.getElementById("services-options");
+    var packagesOptions = document.getElementById("packages-options");
+
+    categorySelect.onchange = function() {
+      rentalsOptions.className = "hidden";
+      servicesOptions.className = "hidden";
+      packagesOptions.className = "hidden";
+
+      if (this.value === "rentals") rentalsOptions.className = "";
+      if (this.value === "services") servicesOptions.className = "";
+      if (this.value === "packages") packagesOptions.className = "";
+    };
+  </script>
+
+  <!-- FOOTER -->
+  <footer>
+      <p>Contact: +91 9921411668 | Email: costafabrica@gmail.com</p>
+      <p>© 2025 Costa Fabrica. All rights reserved.</p>
+  </footer>
+</body>
+</html>

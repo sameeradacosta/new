@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Costa Fabrica - Home</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ===== INDEX PAGE SPECIFIC ===== */
+        /* You can paste the CSS below here or in style.css */
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+   <nav>
+    <div class="nav-container">
+        <a href="index.html" class="logo">Costa Fabrica</a>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li class="has-dropdown">
+                <a href="rentals.html">Rentals</a>
+                <ul class="dropdown">
+                    <li><a href="rentals.html#chairs">Chairs</a></li>
+                    <li><a href="rentals.html#tables">Tables</a></li>
+                    <li><a href="rentals.html#speakers">Speakers</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="services.html">Services</a>
+                <ul class="dropdown">
+                    <li><a href="services.html#catering">Catering</a></li>
+                    <li><a href="services.html#venue">Venue</a></li>
+                    <li><a href="services.html#decorations">Decorations</a></li>
+                    <li><a href="services.html#photographers">Photographers</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="packages.html">Packages</a>
+                <ul class="dropdown">
+                    <li><a href="packages.html#weddings">Weddings</a></li>
+                    <li><a href="packages.html#birthdays">Birthdays</a></li>
+                    <li><a href="packages.html#corporate">Corporate Events</a></li>
+                </ul>
+            </li>
+            <li><a href="order.html">Order Now</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<header class="hero">
+    <h1 class="hero-title">Costa Fabrica</h1>
+    <p class="hero-desc">Turning moments into unforgettable memories with our event rentals and services.</p>
+    <p class="hero-re">Since 1970, trusted for quality & affordability.</p>
+
+    <!-- Explore Button -->
+    <a href="#me" class="hero-explore-btn">Explore</a>
+</header>
+
+<!-- EXPLORE BUTTONS -->
+<section class="explore-buttons-section" id="me">
+    <h2 class="explore-title">Our Categories</h2>
+    <div class="explore-buttons">
+        <a href="rentals.html#chairs">Chairs</a>
+        <a href="rentals.html#tables">Tables</a>
+        <a href="rentals.html#speakers">Speakers</a>
+        <a href="services.html#catering">Catering</a>
+        <a href="services.html#venue">Venue</a>
+        <a href="services.html#decorations">Decorations</a>
+        <a href="services.html#photography">Photographers</a>
+        <a href="packages.html#weddings">Weddings</a>
+        <a href="packages.html#birthdays">Birthdays</a>
+        <a href="packages.html#corporate">Corporate Events</a>
+    </div>
+</section>
+
+<!-- ABOUT US -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        Costa Fabrica is a premier event planning and rental service based in Goa. We specialize in creating unforgettable experiences, combining elegance, creativity, and professionalism to make every occasion truly magical. 
+        Whether it’s weddings, birthdays, corporate events, or intimate gatherings, we provide high-quality furniture, decor, catering, and event services. Our dedicated team works closely with clients to ensure seamless planning, execution, and a stress-free celebration. At Costa Fabrica, we turn your vision into reality and craft memories that last a lifetime.
+    </p>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="faq-container">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <button>What types of events do you cater to?</button>
+        <div class="faq-content">
+            <p>We cater to weddings, birthdays, corporate events, and private parties. No event is too big or small for us.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button>Do you provide furniture rentals?</button>
+        <div class="faq-content">
+            <p>Yes, we provide high-quality chairs, tables, and decorative items for all types of events.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button>Can I customize my package?</button>
+        <div class="faq-content">
+            <p>Absolutely! Our team works closely with clients to create tailored packages based on individual requirements and budgets.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button>How far in advance should I book?</button>
+        <div class="faq-content">
+            <p>We recommend booking at least 3–6 months in advance for weddings and large events, and 1–2 months for smaller gatherings.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button>Are your prices negotiable?</button>
+        <div class="faq-content">
+            <p>Yes, our prices are open to discussion. We understand that every event has a unique budget, so we do our best to offer flexible rates while maintaining the quality and reliability that Costa Fabrica is known for.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>Contact: +91 9921411668 | Email: costafabrica@gmail.com</p>
+    <p>© 2025 Costa Fabrica. All rights reserved.</p>
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.link/uw5t9l" target="_blank" class="whatsapp-float">
+    <img src="wa.webp" alt="WhatsApp Us" />
+</a>
+
+<script>
+    // FAQ Toggle
+    const faqs = document.querySelectorAll('.faq-item button');
+    faqs.forEach(button => {
+        button.addEventListener('click', () => {
+            const item = button.parentElement;
+            item.classList.toggle('active');
+        });
+    });
+</script>
+<script>
+function toggleMenu() {
+  document.querySelector(".navbar").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
